@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author : Max Bui
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Max Bui} \\ \vspace{1pt}
+    \small +1 (613) 501-4838 $|$ \href{mailto:maxbui@cmail.carleton.ca}{\underline{maxbui@cmail.carleton.ca}} $|$ 
+    \href{https://www.linkedin.com/in/maxbui04}{\underline{linkedin.com/in/maxbui04}} $|$
+    \href{https://github.com/Maxsta69}{\underline{github.com/Maxsta69}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carleton University}{Ottawa, ON}
+      {Bachelor of Engineering in Software Engineering}{September 2022 -- May 2027 (Expected)}
+      \resumeItemListStart
+        \resumeItem{3rd Year Standing Undergraduate Student}
+        \resumeItem{Relevant Courses: Computation and Programming (Python), Data Management (Python), Foundations Imperative Programming (C), Object-Oriented Software Development (Java), Computer Organization and Architecture (Assembly), Algorithms \& Data Structures (Python)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, Java, HTML/CSS, JavaScript, SQL, Assembly} \\
+     \textbf{Developer Tools}{: Visual Studio Code, Wing101, BlueJ, Git, Eclipse, Excel, Logisim} \\
+     \textbf{Libraries/Frameworks}{: Matplotlib, JUnit, MongoDB}
+    }}
+ \end{itemize}
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+          {\textbf{Tic Tac Toe GUI} $|$ \emph{Java, BlueJ}}{Feb. 2024 -- March 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a GUI-based Tic Tac Toe game using Java, allowing two players to compete with a graphical representation of the game board}
+            \resumeItem{Implemented features for tracking player statistics, including wins and ties, with real-time updates on the interface}
+            \resumeItem{Integrated sound effects and custom icons to enhance user interaction, creating a more engaging user experience}
+            \resumeItem{Designed a menu system with options to start a new game or quit, ensuring user-friendly and intuitive application}
+            \resumeItem{Applied object-oriented principles to structure the game logic, including methods for checking win conditions, handling player turns, and resetting the game}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Text-Based FaceBook} $|$ \emph{C, Visual Studio Code}}{Oct. 2023 -- Nov. 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a text-based social networking application simulating core Facebook features such as user profiles, friend connections, messaging, and status updates}
+            \resumeItem{Implemented a user authentication system to handle user login, registration, and profile management using C}
+            \resumeItem{Designed and managed data structures for efficient handling of user information, friend lists, and message storage}
+            \resumeItem{Built command-line interfaces for user interaction, supporting commands for adding friends, sending messages, and viewing updates}
+            \resumeItem{Optimized algorithms for searching and retrieving user data, ensuring quick access to profiles and messages}
+            \resumeItem{Tested and debugged the application to ensure stability, scalability, and user data integrity}
+            \resumeItem{Documented the code and project architecture to facilitate future enhancements and maintenance}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Head Waiter}{July 2020 -- Present}
+      {PhoTuan}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem{Efficient and proper food handling, and restaurant protocols}
+        \resumeItem{Monitor the dining room to ensure optimal guest experiences}
+        \resumeItem{Answer customer inquiries and resolve issues promptly}
+        \resumeItem{Assist customers with making menu choices in an informative and helpful fashion}
+        \resumeItem{Effectively communicated with kitchen staff regarding customer allergies, dietary needs, and other special requests}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
